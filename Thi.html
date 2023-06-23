@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trang chủ | Trường THPT Đống Đa</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="assets/css/thi.css">
+        <link rel="stylesheet" href="assets/icons/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel = "icon" href = "assets/img/icon.jpg" type = "image / icon type">
+    </head>
+    <body>
+        <!-- Header -->
+        <div class="header_border"></div>
+        <div id="header">
+            <div class="logo_name_img">
+                <div class="logo">
+                    <a class="img_logo" href="https://c3dongda.edu.vn">
+                        <img src="https://c3dongda.edu.vn/storage/app/uploads/public/3b1/876/882/thumb__170_110_0_0_crop.jpg">
+                    </a>
+                </div>
+                <div class="name_school">
+                    <h1>Trường THPT Đống Đa</h1>
+                </div>
+                <div class="img_bg">
+                    <img src="assets/img/h2.png">
+                </div>
+            </div>
+        </div>
+        <div id="menu">
+            <ul class="main-menu">
+                    <li><a href=""><i class="fa-solid fa-house-chimney"></i></a></li>
+                    <li><a href="#">GIỚI THIỆU</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Thông điệp hiệu trưởng</a></li>
+                            <li><a href="">Lịch sử phát triển</a></li>
+                            <li><a href="">Quá trình xây dựng</a></li>
+                            <li><a href="">Cơ cấu tổ chức</a></li>
+                            <li><a href="">Sứ mệnh tầm nhìn</a></li>
+                            <li><a href="">Hình tựu</a></li>    
+                        </ul>
+                    </li>
+                    <li><a href="#">TIN TỨC</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Tin giáo dục</a></li>
+                            <li><a href="">Tin nhà trường</a></li>
+                            <li><a href="">Sự kiện</a></li>
+                            <li><a href="">Đổi mới giáo dục</a></li>
+                            <li><a href="">Văn hóa - Văn nghệ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">TỔ CHỨC</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Đảng bộ</a></li>
+                            <li><a href="">Ban giám hiệu</a></li>
+                            <li><a href="">Công đoàn</a></li>
+                            <li><a href="">Tổ chuyên môn</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">THI VÀ TUYỂN SINH</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Thi tốt nghiệp THPT</a></li>
+                            <li><a href="">Tuyển sinh vào lớp 10</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">VĂN BẢN</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Văn bản nhà trường</a></li>
+                            <li><a href="">Văn bản bộ giáo dục</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">LỊCH CÔNG TÁC</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Lịch công tác tuần</a></li>
+                            <li><a href="">Lịch công tác tháng</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">TÀI LIỆU</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Đề - Đáp án</a></li>
+                            <li><a href="">Bài giảng - Giáo án</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ALBUM</a></li>
+
+                    <!-- thanh tìm kiếm -->
+                        <div id="search-box">
+                            <form>
+                                <input type="text" id="search-text" placeholder="Search.." required>
+                                <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+            </ul>
+        </div>
+
+        <!-- Slide-Javascript -->
+        <div class="slide">
+            <script>
+                var i = 0;
+                var images = [];
+                var time = 3000;
+                
+                //images list
+                images[0] = 'assets/img/slide1.jpg';
+                images[1] = 'assets/img/slide2.jpg';
+                images[2] = 'assets/img/slide3.jpg';
+                images[3] = 'assets/img/slide4.jpg';
+                images[4] = 'assets/img/slide5.jpg';
+                images[5] = 'assets/img/slide6.jpg';
+                images[6] = 'assets/img/slide7.jpg';
+                images[7] = 'assets/img/slide8.jpg';
+                images[8] = 'assets/img/slide9.jpg';
+                images[9] = 'assets/img/slide10.jpg';
+
+                //change images
+                function changeImage(){
+                    document.slide.src = images[i];
+                    if(i<images.length - 1){
+                        i++;
+                    }
+                    else{
+                        i = 0;
+                    }
+                    setTimeout("changeImage()", time);
+                }
+                window.onload = changeImage;
+            </script>
+            <img name="slide" width="100%" height="550">
+        </div>
+        
+        <!-- Content -->
+        <div id="content">
+            <div class="row">
+                <div class="sub-row-caption">
+                    <div class="list-cate">
+                        <h2 style="margin-top:0px">Thông báo</h2>
+                        <!-- Tam giác -->
+                        <div class="arrow-right"></div>
+                    </div>
+                    <div class="list-row-caption">
+                        <ul>
+                            <li><a href="Thicon.html">Thông báo tuyển sinh vào lớp 10 năm học 2022-2023</a></li>
+                            <li><a href="">Thông báo cấp độ dịch ngày 21/5/2022</a></li>
+                            <li><a href="">Công văn 227 của Sở GD về việc tổ chức dạy học cho học sinh</a></li>
+                            <li><a href="">Đánh giá cấp độ dịnh ngày 12/5/2022</a></li>
+                            <li><a href="">Thông báo về việc chuyển trường đầu học kỳ 2, năm học 2022-2023</a></li>
+                            <li><a href="">Đánh giá cấp đô dịch ngày 1/4/2022</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-row-caption">
+                    <div class="list-cate">
+                        <h2>Văn bản</h2>
+                         <!-- Tam giác -->
+                         <div class="arrow-right"></div>
+                    </div>
+                    <div class="list-row-caption">
+                        <ul>
+                            <li><a href="">Thông báo cấp độ dịch ngày 31/12/2021</a></li>
+                            <li><a href="">3 công khai theo TT36</a></li>
+                            <li><a href="">Công khai dự toán thu - chi năm 2022</a></li>
+                            <li><a href="">Cuộc thi "An toàn giao thông cho nụ cười ngày mai"</a></li>
+                            <li><a href="">Công khai dự toán điều chỉnh tháng 12/2021</a></li>
+                            <li><a href="">Công khai quyết toán thu chi ngân sách nhà nước năm 2021</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <a class="link1" href="#">
+                    <img src="assets/img/link1.png">
+                </a>
+                <a class="link2" href="#">
+                    <img src="assets/img/a1.png">
+                </a>
+            </div>
+            <div class="right">
+                <div class="sub-right-caption-one">
+                    <div class="list-cate">
+                        <h2 style="margin-top:-20px;">Tin Tức</h2>
+                         <!-- Tam giác -->
+                         <div class="arrow-right"></div>
+                    </div>    
+                    <div class="content_border"></div>
+                        <div class="list-right-caption">
+                            <div class="row-1">
+                                <div class="img-caption">
+                                    <a class="img-caption-a" href="#">
+                                        <img alt="THÔNG BÁO TUYỂN SINH VÀO LỚP 10 NĂM HỌC 2022-2023" src="assets/img/anh2.png">
+                                    </a>
+                                </div>
+                                <div class="note">
+                                    <a href="#">THÔNG BÁO TUYỂN SINH VÀO LỚP 10 NĂM HỌC 2022 - 2023</a>
+                                    <div class="time"><i class="fa-solid fa-calendar-days"></i>04 / 05 /2022</div>
+                                    <p><i>THÔNG BÁO TUYỂN SINH VÀO LỚP 10 NĂM HỌC 2022 - 2023</i></p>
+                                </div>
+                            </div>
+                            <div class="right-1">
+                                <div class="item-news-home">
+                                    <div class="item-news-home-a">
+                                        <a href="#">
+                                            <img src="assets/img/anh3.jpg" alt="Chuơng trình đào tạo IELTS năm học 2022" class="tall">
+                                        </a>
+                                    </div>
+                                    <div class="note">
+                                        <a href="#">Chuơng trình đào tạo IELTS năm học 2022</a>
+                                        <div class="time"><i class="fa-solid fa-calendar-days"></i>04 / 05 /2022</div>
+                                        <p><i>Một số hình ảnh về trường THPT Đống Đa</i></p>
+                                    </div>
+                                </div>
+                                <div class="item-news-home">
+                                    <div class="item-news-home-a">
+                                        <a href="#">
+                                            <img src="assets/img/not.jpg" alt="Thư chúc Tết của Hiệu trưởng năm 2022" class="tall">
+                                        </a>
+                                    </div>
+                                    <div class="note">
+                                        <a href="#">Thư chúc Tết của Hiệu trưởng năm 2022</a>
+                                        <div class="time"><i class="fa-solid fa-calendar-days"></i>04 / 05 /2022</div>
+                                        <p><i>Thư chúc Tết của Hiệu trưởng năm 2022</i></p>
+                                    </div>
+                                </div>
+                                <div class="item-news-home">
+                                    <div class="item-news-home-a">
+                                        <a href="#">
+                                            <img src="assets/img/anh3.jpg" alt="Học sinh nhận thiết bị từ chương trình 'Sóng Và máy tính cho em'" class="tall">
+                                        </a>
+                                    </div>
+                                    <div class="note">
+                                        <a href="#">Học sinh nhận thiết bị từ chương trình 'Sóng Và máy tính cho em'</a>
+                                        <div class="time"><i class="fa-solid fa-calendar-days"></i>04 / 05 /2022</div>
+                                        <p><i>Học sinh nhận thiết bị từ chương trình 'Sóng Và máy tính cho em'</i></p>
+                                    </div>
+                                </div>
+                                <div class="item-news-home">
+                                    <div class="item-news-home-a">
+                                        <a href="#">
+                                            <img src="assets/img/anh4.jpg" alt="Học trực tiếp kết hợp trực tuyến" class="tall">
+                                        </a>
+                                    </div>
+                                    <div class="note">
+                                        <a href="#">Học trực tiếp kết hợp trực tuyến</a>
+                                        <div class="time"><i class="fa-solid fa-calendar-days"></i>04 / 05 /2022</div>
+                                        <p><i>Học trực tiếp kết hợp trực tuyến</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>        
+                <div class="sub-right-caption-tow">
+                    <div class="list-right-caption-bottom">
+                        <div class="left">
+                            <div class="list-cate">
+                                <h2 style="width:150px">Lịch công tác</h2>
+                                 <!-- Tam giác -->
+                                <div class="arrow-right" style="margin-left:160px"></div>
+                            </div>
+                            <div class="left-right-caption">
+                                <ul>
+                                    <li><a href="">LỊCH CÔNG TÁC THÁNG 10/2020</a>
+                                        <div class="time"><i class="fa-solid fa-calendar-days"></i>04 / 05 /2022</div>
+                                        <p><i>LỊCH CÔNG TÁC THÁNG 10/2020</i></p>
+                                    </li>
+                                    <li><a href="">LỊCH CÔNG TÁC THÁNG 9/2020</a>
+                                        <div class="time"><i class="fa-solid fa-calendar-days"></i>04 / 05 /2022</div>
+                                        <p><i>LỊCH CÔNG TÁC THÁNG 9/2020</i></p>
+                                    </li>
+                                    <li><a href="">LỊCH CÔNG TÁC THÁNG 6,7/2020</a>
+                                        <div class="time"><i class="fa-solid fa-calendar-days"></i>04 / 05 /2022</div>
+                                        <p><i>LỊCH CÔNG TÁC THÁNG 6,7/2020</i></p>
+                                    </li>
+                                    <li><a href="">LỊCH CÔNG TÁC THÁNG 5/2020</a>
+                                        <div class="time"><i class="fa-solid fa-calendar-days"></i>04 / 05 /2022</div>
+                                        <p><i>LỊCH CÔNG TÁC THÁNG 5/2020</i></p>
+                                    </li>
+                                    <li><a href="">LỊCH CÔNG TÁC THÁNG 3/2020</a>
+                                        <div class="time"><i class="fa-solid fa-calendar-days"></i>04 / 05 /2022</div>
+                                        <p><i>LỊCH CÔNG TÁC THÁNG 3/2020</i></p>
+                                    </li>
+                                </ul>
+                            </div> 
+                        </div>
+                        <div class="left-right">
+                            <div class="list-cate">
+                                <h2>Tài liệu</h2>
+                                 <!-- Tam giác -->
+                                <div class="arrow-right"></div>
+                            </div>
+                            <div class="left-right-caption">
+                                <ul>
+                                    <li><a href="">BỘ GIÁO DỤC CÔNG BỐ ĐỀ THI MINH HỌA THPT QUỐC GIA 2020</a>
+                                        <div class="time"><i class="fa-solid fa-calendar-days"></i>04 / 05 /2022</div>
+                                        <p><i>BỘ GIÁO DỤC CÔNG BỐ ĐỀ THI MINH HỌA THPT QUỐC GIA 2020</i></p>
+                                    </li>
+                                    <li><a href="">NỘI DUNG ÔN TẬP LẦN 3 - KHỐI 11</a>
+                                        <div class="time"><i class="fa-solid fa-calendar-days"></i>04 / 05 /2022</div>
+                                        <p><i>NỘI DUNG ÔN TẬP LẦN 3 - KHỐI 11</i></p>
+                                    </li>
+                                    <li><a href="">NỘI DUNG ÔN TẬP LẦN 3 - KHỐI 10</a>
+                                        <div class="time"><i class="fa-solid fa-calendar-days"></i>04 / 05 /2022</div>
+                                        <p><i>NỘI DUNG ÔN TẬP LẦN 3 - KHỐI 10</i></p>
+                                    </li>
+                                    <li><a href="">LỊCH PHÁT SÓNG CHƯƠNG TRÌNH DẠY HỌC TRÊN TRUYỀN HÌNH Tuần từ 16/3/2020 đến 21/3/2020</a>
+                                        <div class="time"><i class="fa-solid fa-calendar-days"></i>04 / 05 /2022</div>
+                                        <p><i>LỊCH PHÁT SÓNG CHƯƠNG TRÌNH DẠY HỌC TRÊN TRUYỀN HÌNH Tuần từ 16/3/2020 đến 21/3/2020</i></p>
+                                    </li>
+                                    <li><a href="">HƯỚNG DẪN SỬ DỤNG PHẦN MỀM ZOOM</a>
+                                        <div class="time"><i class="fa-solid fa-calendar-days"></i>04 / 05 /2022</div>
+                                        <p><i>HƯỚNG DẪN SỬ DỤNG PHẦN MỀM ZOOM</i></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-work-home">
+                    <div class="list-cate">
+                        <h2 class="title-listcate">Hoạt động</h2>
+                         <!-- Tam giác -->
+                         <div class="arrow-right"></div>
+                    </div>
+                    <div class="content_border"></div>
+                    <div class="sub-work-home-content">
+                        <div class="sub-work-home-item">
+                            <div class="sub-work-home-item1">
+                                <div>
+                                    <a href="">
+                                        <img src="assets/img/home1.jpg">
+                                    </a>
+                                </div>
+                                <div class="item-font">
+                                    <a href="">HỘI THI ' CÔ GIÁO TÀI NĂNG DUYÊN DÁNG'</a>
+                                    <div class="time"><i class="fa-solid fa-calendar-days"></i>04 / 05 /2022</div>
+                                    <p><i>Hội thi là sân chơi bổ ích, nâng cao tình đoàn kết, đời sống văn hóa, tinh thần cho công đoàn viên; ...</i></p>
+                                </div>
+                            </div>
+                            <div class="sub-work-home-item1">
+                                <div>
+                                    <a href="">
+                                        <img src="assets/img/home2.jpg">
+                                    </a>
+                                </div>
+                                <div class="item-font">
+                                    <a href="">LỄ TRAO GIẤY CHỨNG NHẬN HỌC SINH GIỎI THÀNH PHỐ NĂM HỌC</a>
+                                    <div class="time"><i class="fa-solid fa-calendar-days"></i>04 / 05 /2022</div>
+                                    <p><i>LỄ TRAO GIẤY CHỨNG NHẬN HỌC SINH GIỎI THÀNH PHỐ NĂM HỌC 2019 - 2020</i></p>
+                                </div>
+                            </div>
+                            <div class="sub-work-home-item1">
+                                <div >
+                                    <a href="">
+                                        <img src="assets/img/home3.jpg">
+                                    </a>
+                                </div>
+                                <div class="item-font">
+                                    <a href="">[ GÓC CLB MÔI TRƯỜNG]</a>
+                                    <div class="time"><i class="fa-solid fa-calendar-days"></i>04 / 05 /2022</div>
+                                    <p><i>Chúng tớ - một CLB vì môi trường - luôn hướng đến những giải pháp tốt nhất đ</i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-work-home">
+                    <div class="list-cate">
+                        <h2 class="title-listcate">Tổ chức</h2>
+                        <!-- Tam giác -->
+                        <div class="arrow-right"></div>
+                    </div>
+                    <div class="content_border"></div>
+                    <div class="sub-work-home-content">
+                        <div class="sub-work-home-item">
+                            <div class="sub-work-home-item1">
+                                <div>
+                                    <a href="">
+                                        <img src="assets/img/home4.jpg">
+                                    </a>
+                                </div>
+                                <div class="item-font">
+                                    <a href="">BAN GIÁM HIỆU</a>
+                                    <div class="time"><i class="fa-solid fa-calendar-days"></i>04 / 05 /2022</div>
+                                    <p><i>THÔNG TIN BAN GIÁM HIỆU TRƯỜNG THPT ĐỐNG ĐA</i></p>
+                                </div>
+                            </div>
+                            <div class="sub-work-home-item1">
+                                <div>
+                                    <a href="">
+                                        <img src="assets/img/home4.jpg">
+                                    </a>
+                                </div>
+                                <div class="item-font">
+                                    <a href="">BAN CHẤP HÀNH ĐẢNG BỘ</a>
+                                    <div class="time"><i class="fa-solid fa-calendar-days"></i>04 / 05 /2022</div>
+                                    <p><i>Thông tin BCH Đảng bộ trường THPT Đống Đa</i></p>
+                                </div>
+                            </div>
+                            <div class="sub-work-home-item1">
+                                <div >
+                                    <a href="">
+                                        <img src="assets/img/home4.jpg">
+                                    </a>
+                                </div>
+                                <div class="item-font">
+                                    <a href="">Ban chấp hành công đoàn</a>
+                                    <div class="time"><i class="fa-solid fa-calendar-days"></i>04 / 05 /2022</div>
+                                    <p><i>Ban chấp hành công đoàn</i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Fotter -->
+        <div id="fotter">
+            <div class="fotter-nav">
+                <div class="fotter-logo">
+                    <img src="assets/img/fotter.png">
+                </div>
+                <div class="fotter-content">
+                    <div class="info-fotter">
+                        <div class="name">TRƯỜNG THPT ĐỐNG ĐA</div>
+                        <div class="information">
+                            <div class="information-chird">Số 10 ngõ Quan Thổ 1, Tôn Đức Thắng, Đống Đa , Hà Nội</div>
+                            <div class="information-chird">Điện thoại: 02438513691 / Fax: 02438513691</div>
+                            <div class="information-chird">Email: c3dongda@hanoiedu.vn</div>
+                        </div>
+                    </div>
+                    <div class="info-fotter">
+                        <div class="item-fotter-nav">
+                            <div class="name">DANH MỤC</div>
+                            <div class="item-fotter-1">
+                                <div class="item-fotter-1-1">
+                                    <div class="item-content"><a href="">Giới thiệu</a></div>
+                                    <div class="item-content"><a href="">Tổ chức</a></div>
+                                    <div class="item-content"><a href="">Văn bản</a></div>
+                                    <div class="item-content"><a href="">Tài liệu</a></div>
+                                </div>
+                                <div class="item-fotter-1-2">
+                                    <div class="item-content"><a href="">Tin tức</a></div>
+                                    <div class="item-content"><a href="">Hoạt động</a></div>
+                                    <div class="item-content"><a href="">Lịch công tác</a></div>
+                                    <div class="item-content"><a href="">Album</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-fotter">
+
+                        <div class="name">LIÊN KẾT NHANH</div>
+                        <div class="fotter-maps">
+                            <img src="assets/img/maps.png" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>    
+</html>
